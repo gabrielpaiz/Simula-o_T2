@@ -1,0 +1,24 @@
+Lanches:
+Probabilidade 0 = 0,0004
+Probabilidade 1 = 0,0022
+Probabilidade 2 = 0,0295
+Probabilidade 3 = 0,3584
+Probabilidade 4 = 0,6094
+
+Mi 1 = 1
+Mi 2 = 1
+Mi 3 = 1
+Mi 4 = 1
+
+Perda = 22278
+
+lambda = 22278/ 0,6094
+lambda = 54607,8109
+
+lambda lanches = 54607,8109/149572,2145 = 0,36509328
+
+População Média(N) = 0,00022 * 1 + 0,0295 * 2 + 0,03584 * 3 + 0,6094 * 4 
+        ||         = 3,5938
+
+
+tempo total de execução = 149572,2145
