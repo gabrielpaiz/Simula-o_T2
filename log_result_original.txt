@@ -1,0 +1,112 @@
+*********************************************************
+Queue:   Entrada (G/G/2/7)
+Arrival: 1.0 ... 3.0
+Service: 2.0 ... 5.0
+*********************************************************
+   State               Time               Probability
+      0             227,9963                 0,15%
+      1            8769,3246                 5,86%
+      2           26442,7460                17,68%
+      3           31740,0189                21,22%
+      4           29236,2037                19,55%
+      5           26953,9562                18,02%
+      6           19534,3174                13,06%
+      7            6667,6513                 4,46%
+
+Number of losses: 1561
+População Média: 3.8275999999999994
+Vazão: 1.974618241848947
+Ultilização: 0.9692000000000001
+Tempo de Resposta: 1.974618241848947
+
+-A fila tem uma boa distribuição nos tempos dos estados.
+-Sua população média é de 3.8 o que parece estar balanceado para uma fila de tamanho 7.
+-Saem aproximadamente 2 clientes por unidade de tempo.
+-Tempo de resposta média de 2 segundos
+
+==================================================================
+*********************************************************
+Queue:   Lanches (G/G/1/4)
+Service: 3.0 ... 7.0
+*********************************************************
+   State               Time               Probability
+      0              57,5861                 0,04%
+      1             334,8524                 0,22%
+      2            4414,1974                 2,95%
+      3           53610,1389                35,84%
+      4           91155,4396                60,94%
+
+Number of losses: 33278
+População Média: 3.574
+Vazão: 3.575787893946973
+Ultilização: 0.9995
+Tempo de Resposta: 3.575787893946973
+
+- Fila se mantém na maior parte do tempo lotada ou quase cheia, o que ocasionou uma grande perda de clientes 33278
+- Não está subutilizada
+- População média alta quando comparado ao tamanho da fila
+- Tempo de resposta deve ser melhorado em decorrencia do número de clientes perdidos
+
+====================================================================
+
+*********************************************************
+Queue:   Bebidas (G/G/1/3)
+Service: 2.0 ... 4.0
+*********************************************************
+   State               Time               Probability
+      0           40347,6005                26,98%
+      1           57475,0453                38,43%
+      2           39827,4184                26,63%
+      3           11922,1502                 7,97%
+
+Number of losses: 1877
+População Média: 1.156
+Vazão: 1.5829111324113379
+Ultilização: 0.7303
+Tempo de Resposta: 1.5829111324113379
+
+- Fila com boa distribuição, sem muitas perdas
+- Utilização OK, se manteve 26% do tempo vazia mas o que pode ser explicado por não ter uma demanda tão alta
+- Seu tempo de resposta esta baixo que pode ser explicado pelo utilização de 0.73
+
+=========================================================================
+
+*********************************************************
+Queue:   Sorvete (G/G/1/3)
+Service: 3.0 ... 4.0
+*********************************************************
+   State               Time               Probability
+      0           94244,0525                63,01%
+      1           46007,6562                30,76%
+      2            8551,9921                 5,72%
+      3             768,5136                 0,51%
+
+Number of losses: 52
+População Média: 0.4373
+Vazão: 1.1822114084887807
+Ultilização: 0.3699
+Tempo de Resposta: 1.1822114084887807
+
+- Fila subutilizada com vazão muito baixa
+- se manteve maior parte do tempo com a fila vazia ou com somente uma pessoa
+- poucas perdas e baixo tempo de resposta
+- talvez seja interessante trocar o funciona da fila de sorvete com o da fila da lanches por ter a possibilidade de atender mais devagar os clientes do sorvete
+
+*********************************************************
+Queue:   Cinecar (G/G/3)
+Service: 1.0 ... 2.0
+*********************************************************
+   State               Time               Probability
+      0           86487,3731                57,82%
+      1           54992,4338                36,77%
+      2            7788,9665                 5,21%
+      3             303,4411                 0,20%
+
+Number of losses: 0
+População Média: 0.47790000000000005
+Vazão: 1.0
+Ultilização: 0.1593
+Tempo de Resposta: 1.0
+
+- fila da saída subutilizada com população média baixa
+- subutilização deve se explicar devido ao número de atendentes, direcionar 1 atendente para a fila de lanches

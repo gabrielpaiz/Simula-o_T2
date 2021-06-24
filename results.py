@@ -2,6 +2,8 @@ import sys
 import re
 
 def taxa_entrada(perda, prob, tempo):
+    if prob == 0.0 or perda == 0:
+        return 0
     return (perda/prob)/tempo
 
 
@@ -67,7 +69,7 @@ tempo, mi = (0.0, 0.0)
 service_average = 0
 
 filas_dict = {}
-with open("resultados.txt") as arq:
+with open("bom_para_execução.txt") as arq:
     linhas  = arq.read()
     _, *rest = re.split(r"#(?:)", linhas)
     filas = [r.split("\n") for r in rest]
