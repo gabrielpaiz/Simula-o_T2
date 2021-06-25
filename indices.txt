@@ -1,0 +1,56 @@
+Fila: lanches
+Probabilidades: [0.0004, 0.0022, 0.029500000000000002, 0.35840000000000005, 0.6093999999999999]
+Perdas: 33278
+Tempo Total: 149572.2144
+Taxa de Entrada: 0.36509328407456926
+Taxa de Saida: [1, 1, 1, 1, 1]
+População Média: 3.574
+Vazão: 3.575787893946973
+Ultilização: 0.9995
+Tempo de Resposta: 3.575787893946973
+
+Fila: bebidas
+Probabilidades: [0.2698, 0.3843, 0.2663, 0.0797]
+Perdas: 1877
+Tempo Total: 149572.2144
+Taxa de Entrada: 0.1574544821230098
+Taxa de Saida: [1, 1, 1, 1]
+População Média: 1.156
+Vazão: 1.5829111324113379
+Ultilização: 0.7303
+Tempo de Resposta: 1.5829111324113379
+
+Fila: sorvete
+Probabilidades: [0.6301, 0.30760000000000004, 0.0572, 0.0051]
+Perdas: 52
+Tempo Total: 149572.21440000003
+Taxa de Entrada: 0.06816826555836929
+Taxa de Saida: [1, 1, 1, 1]
+População Média: 0.4373
+Vazão: 1.1822114084887807
+Ultilização: 0.3699
+Tempo de Resposta: 1.1822114084887807
+
+Fila: cinecar
+Probabilidades: [0.5782, 0.3677, 0.0521, 0.002]
+Perdas: 0
+Tempo Total: 149572.2145
+Taxa de Entrada: 0.0
+Taxa de Saida: [1, 2, 3, 3]
+População Média: 0.47790000000000005
+Vazão: 1.0
+Ultilização: 0.1593
+Tempo de Resposta: 1.0
+
+Fila: entrada
+Probabilidades: [0.0015, 0.058600000000000006, 0.17679999999999998, 0.2122, 0.1955, 0.1802, 0.1306, 0.0446]
+Perdas: 1561
+Tempo Total: 149572.2144
+Taxa de Entrada: 0.23400068081094078
+Taxa de Saida: [1, 2, 2, 2, 2, 2, 2, 2]
+População Média: 3.8275999999999994
+Vazão: 1.974618241848947
+Ultilização: 0.9692000000000001
+Tempo de Resposta: 1.974618241848947
+
+

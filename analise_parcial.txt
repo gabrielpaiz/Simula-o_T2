@@ -1,0 +1,126 @@
+*********************************************************
+Queue:   Lanches (G/G/3/4)
+Service: 3.0 ... 5.5
+*********************************************************
+   State               Time               Probability
+      0            8332,0504                 7,30%
+      1           30298,8072                26,53%
+      2           41507,5637                36,35%
+      3           26105,1865                22,86%
+      4            7947,5356                 6,96%
+
+Number of losses: 2102
+
+População Média: 1.9565
+VazÒo: 1.0368858975038424
+Ultilizão: 0.6289666666666667
+Tempo de Resposta: 1.0368858975038424
+
+-- como a fila do sorvete estava sendo subutilizada e o funcionário que estava
+--	atendendo no sorvete apresentava resultados melhores eles trocaram
+--	diminuindo o tempo de serviço da fila de lanches
+-- além disso, dois funcionários do cinecar foram direcionados para ajudar com os lanches
+-- o resultado foi uma diminuição considerável na perda de clientes
+-- diminuindo o tempo de resposta
+-- nessa fila antes eram perdidos 33mil clientes que baixaram para 2mil
+
+*********************************************************
+Queue:   Bebidas (G/G/1/3)
+Service: 2.0 ... 4.0
+*********************************************************
+   State               Time               Probability
+      0           10550,7611                 9,24%
+      1           29875,5440                26,16%
+      2           46945,2068                41,11%
+      3           26819,6316                23,49%
+
+Number of losses: 7632
+
+População Média: 1.7885
+Vazão: 1.9705817540766857
+Ultilizão: 0.9076000000000001
+Tempo de Resposta: 1.9705817540766857
+
+-- fila teve um aumento considerável no nas perdas principalmente pelo sistema ter
+solucionado o número em excesso de perdas na fila de lanches, o que fez com a fila
+de bebidas aumentasse o seu fluxo
+-- sua utilização aumentou de 0.73 para 0.9
+-- como nenhuma das outras filas encontra-se subutilizada então não é possível
+nem realizar troca de funcionarios ou adição de um novo, é aconselhado
+que o cinecar adicione na fila de bebidas mais um lugar na fila e contrate um
+novo funcionário para atender.
+
+
+*********************************************************
+Queue:   Sorvete (G/G/1/3)
+Service: 3.0 ... 5.5
+*********************************************************
+   State               Time               Probability
+      0           37832,7046                33,13%
+      1           42826,4384                37,50%
+      2           25999,0677                22,77%
+      3            7532,9328                 6,60%
+
+Number of losses: 995
+População Média: 1.0284
+Vazão: 1.5379093764019738
+Ultilização: 0.6687000000000001
+Tempo de Resposta: 1.5379093764019738
+
+-- funcionário que trabalhava mais rapido saiu da fila do Sorvete substituído
+--	pelo que saiu da fila de Lanches, aumentando o tempo de serviço
+-- como o tempo de serviço aumentou e o fluxo de pessoas possívelmente também
+-- houve uma maior perda de pessoas mas pelo menos a fila aumentou sua utilização
+-- se manteve apenas 6% do tempo cheia, o que indica que clientes que passaram por
+ali foram atendidos quase em sua totalidade
+
+*********************************************************
+Queue:   Cinecar (G/G/1)
+Service: 1.0 ... 2.0
+*********************************************************
+   State               Time               Probability
+      0           33691,9890                29,50%
+      1           49949,0420                43,74%
+      2           23806,7140                20,85%
+      3            5726,1456                 5,01%
+      4             908,5949                 0,80%
+      5              99,4964                 0,09%
+      6               8,8854                 0,01%
+      7               0,2763                 0,00%
+
+Number of losses: 0
+PopulaþÒo Média: 1.0418
+Vazão: 1.4777304964539006
+UltilizaþÒo: 0.7050000000000001
+Tempo de Resposta: 1.4777304964539006
+
+
+*********************************************************
+Queue:   Entrada (G/G/2/7)
+Arrival: 1.0 ... 3.0
+Service: 2.0 ... 5.0
+*********************************************************
+   State               Time               Probability
+      0              67,4568                 0,06%
+      1            2452,8512                 2,15%
+      2            9151,8717                 8,01%
+      3           15135,2523                13,25%
+      4           20715,1873                18,14%
+      5           27771,2542                24,32%
+      6           27332,1096                23,94%
+      7           11565,1604                10,13%
+
+Number of losses: 3421
+PopulaþÒo MÚdia: 4.666300000000001
+VazÒo: 2.359935265260709
+UltilizaþÒo: 0.98865
+Tempo de Resposta: 2.359935265260709
+
+-- não foi alterado nada nesta fila
+-- como o sistema perdeu menos clientes, o número pessoa que entraram nessa fila aumentou
+--	porque ela pessoas que saem do cinecar tem uma probabilidade de voltar pra entrada
+-- como o fluxo de pessoas aumentaram a população média aumento e o tempo de resposta diminuiu
+-- a fila se manteve por mais tempo cheia que na original
+-- as perdas aumentaram mas nada significativo quando comparado ao número de pessoas do sistema
+
+
