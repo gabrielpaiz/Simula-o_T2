@@ -1,0 +1,5 @@
+
+Nessa simulação foram transferidos dois funcionarios do cinecar para o lanche, pois o cinecar estava sendo sunutilizado. Também fois trocado um funcionário mais experiente que estava no sorvete com um funcionário menos experiente que estava no lanche.
+Com essas mudanças a fila do lanche teve uma melhora significativa na perda diminiindo de 33278 para 2102, além de utilizar melhor a capacidade da fila do cinecar.
+Porém com o aumento na vazão do lanche, as filas seguintes tiveram uma maior perda de clientes, principalmente a fila da bebida que passou de 1877 para 7632.
+
